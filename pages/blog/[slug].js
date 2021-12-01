@@ -16,10 +16,7 @@ export default function PostPage({ frontmatter, slug, content }) {
       <div className='card card-page'>
         <h1 className='post-title'>{title}</h1>
         <div className='post-date'>{date}</div>
-        <div
-          className='post-image'
-          style={{ position: "relative", width: "100%", height: "500px" }}
-        >
+        <div className='post-image'>
           <Image src={cover_image} layout='fill' objectFit='fill' alt='image' />
         </div>
 

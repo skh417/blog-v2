@@ -4,15 +4,7 @@ import Image from "next/image";
 export default function Post({ post }) {
   return (
     <div className='card'>
-      <div
-        className='post-thumbnail'
-        style={{
-          position: "relative",
-          width: "100%",
-          height: "200px",
-          marginBottom: "20px",
-        }}
-      >
+      <div className='post-thumbnail'>
         <Image
           src={post.frontmatter.cover_image}
           alt='img'
